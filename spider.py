@@ -69,6 +69,4 @@ class generic_scrapper(Spider):
                 yield Request(next_link, 
                     headers = engine[self.name]["header"], 
                     callback = self.parse)
-            if self.pages > 0:
-                self.pages -= 1
                 # print(f'\n###Link: {next_link}\n')
